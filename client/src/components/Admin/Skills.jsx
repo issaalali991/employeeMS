@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { SpinnerDotted } from "spinners-react";
 import axios from "axios";
-import React from 'react';
+import React from "react";
 
 function Skills() {
   const [sending, setSending] = useState(false);
@@ -13,8 +13,7 @@ function Skills() {
     description: "",
   });
   const navigate = useNavigate();
-  const VITE_APP_API_BASE_URL =
-    "https://employees-management-system.onrender.com";
+  const VITE_APP_API_BASE_URL = "https://employeems-x9l6.onrender.com/";
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSending(true);

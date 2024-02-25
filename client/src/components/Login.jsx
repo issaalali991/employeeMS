@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useCookies } from "react-cookie";
 import { Link, useNavigate } from "react-router-dom";
-import React from 'react';
+import React from "react";
 
 // import { useAuth } from '../context/AuthProvider';
 import axios from "axios";
@@ -15,9 +15,7 @@ function Login() {
   const [_, setCookie] = useCookies(["access_token"]);
   const navigate = useNavigate();
 
-  const VITE_APP_API_BASE_URL =
-    "https://employees-management-system.onrender.com";
-
+  const VITE_APP_API_BASE_URL = "https://employeems-x9l6.onrender.com/";
 
   const handleSubmit = async (e) => {
     e.preventDefault();

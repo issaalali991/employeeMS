@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 function ShowAllSkills() {
   const [data, setData] = useState([]);
-  const VITE_APP_API_BASE_URL =
-    "https://employees-management-system.onrender.com";
+  const VITE_APP_API_BASE_URL = "https://employeems-x9l6.onrender.com/";
   useEffect(() => {
     axios.get(`${VITE_APP_API_BASE_URL}/employee/employeeskill`).then((res) => {
       setData(res.data);

@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const API_BASE_URL = 'https://employees-management-system.onrender.com';
+const API_BASE_URL = 'https://employeems-x9l6.onrender.com/';
 
 export const getUser = async (user, pass, setCookie) => {
   console.log(API_BASE_URL);
