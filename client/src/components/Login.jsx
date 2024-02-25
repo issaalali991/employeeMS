@@ -15,7 +15,7 @@ function Login() {
   const [_, setCookie] = useCookies(["access_token"]);
   const navigate = useNavigate();
 
-  const VITE_APP_API_BASE_URL = "https://employeems-x9l6.onrender.com/";
+  const VITE_APP_API_BASE_URL = "https://employeems-x9l6.onrender.com";
 
   const handleSubmit = async (e) => {
     e.preventDefault();

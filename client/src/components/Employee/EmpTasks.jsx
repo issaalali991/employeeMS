@@ -5,7 +5,7 @@ function EmpTasks() {
   const [data, setData] = useState([]);
   const emp_id = localStorage.getItem("userID");
   const [statustoggle, setStatustoggle] = useState(false);
-  const VITE_APP_API_BASE_URL = "https://employeems-x9l6.onrender.com/";
+  const VITE_APP_API_BASE_URL = "https://employeems-x9l6.onrender.com";
   const handleSetStatus = (task_id, status) => () => {
     status = status === "pending" ? "completed" : "pending";
     console.log(status, task_id, "status");

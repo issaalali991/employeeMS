@@ -3,7 +3,7 @@ import axios from "axios";
 
 function ShowAllTasks() {
   const [data, setData] = useState([]);
-  const VITE_APP_API_BASE_URL = "https://employeems-x9l6.onrender.com/";
+  const VITE_APP_API_BASE_URL = "https://employeems-x9l6.onrender.com";
 
   useEffect(() => {
     axios.get(`${VITE_APP_API_BASE_URL}/employee/alltasks`).then((res) => {
