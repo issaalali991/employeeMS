@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useCookies } from "react-cookie";
 import { Link, useNavigate } from "react-router-dom";
 import React from "react";
@@ -15,11 +15,13 @@ function Login() {
   const [_, setCookie] = useCookies(["access_token"]);
   const navigate = useNavigate();
 
-  const VITE_APP_API_BASE_URL = "https://employeems-x9l6.onrender.com";
+  const VITE_APP_API_BASE_URL = import.meta.env.VITE_APP_API_BASE_URL;
+  console.log(VITE_APP_API_BASE_URL);
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+ 
     try {
       const res = await axios.post(`${VITE_APP_API_BASE_URL}/employee/login`, {
         email: email,

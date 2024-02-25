@@ -24,7 +24,7 @@ function AddEmployee() {
   });
 
   const navigate = useNavigate();
-  const VITE_APP_API_BASE_URL = "https://employeems-x9l6.onrender.com";
+  const VITE_APP_API_BASE_URL = import.meta.env.VITE_APP_API_BASE_URL;
   // ----get all Skill----
   // useEffect(() => {
   //   const fetchData = async () => {
